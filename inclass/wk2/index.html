@@ -12,27 +12,82 @@
 
     <title>week1</title>
   </head>
+
   <body>
+  	<header>
+
+  	<nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-warning">
+  		<a class="navbar-brand" href="#">Navbar</a>
+ 		 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+	 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Link</a>
+	      </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Link</a>
+	      </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Link</a>
+	      </li>
+
+
+	    </ul>
+	  </div>
+	</nav>
+
+</header>
+
+
+<main>
+
     <div class="container">
-    	<div class="row">
-    		<div class="col">
-    			<h3>first column</h3>
+    	<div class="row no-gutters">
+    		<div class="col-md">
+    			<div class="alert alert-primary">col 1</div>
     		</div>
-    		<div class="col">
-    			<h3>second column</h3>
+    		<div class="col-md">
+    			<div class="alert alert-danger">col 2</div>
     		</div>
-    		<div class="col">
-    			<h3>third column</h3>
+    		<div class="col-md-6">
+    			<div class="alert alert-secondary">col 3</div>
+    		</div>
+    		<div class="col-md">
+    			<div class="alert alert-success">col 4</div>
+    		</div>
+    		<div class="col-md">
+    			<div class="alert alert-info">col 5</div>
     		</div>
     	</div>
     </div>
 
-    <dis class="container-fluid">
-    	<div class="row">
-    		<div class="col">
+    <div class="container-fluid">
+    	<div class="row no-gutters">
+    		<div class="col-md-6 col-lg-4">
+    			<div class="alert btn-primary">fluid-col 1</div>
+    		</div>
+    		<div class="col-md-3 col-lg-4 dorder-first">
+    			<div class="alert btn-warning">fluid-col 2</div>
+    		</div>
+    		<div class="col-md-3 col-lg-4">
+    			<div class="alert btn-danger">fluid-col 3</div>
     		</div>
     	</div>
     </div>
+
+</main>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

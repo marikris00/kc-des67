@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+  background-color: white;
+}
+
+.bg-dark {
+  background-color: black !important;
+}
+
+main {
+  padding-top: 5%;
+}
+
+h5{
+  font-family: 'Bitter', serif;
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+h6 {
+  font-family: 'Bitter', serif;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+  color: red;
+}

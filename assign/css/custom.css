@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  background-color: white;
+  background-color: black;
 }
 
 .bg-dark {
@@ -16,18 +16,25 @@ h5{
   font-family: 'Bitter', serif;
   text-align: center;
   padding-top: 0.5em;
+  color: white;
 }
 
 h6 {
   font-family: 'Bitter', serif;
   text-align: center;
+  color: white;
 }
 
 p {
   text-align: center;
+  color: #696969;
 }
 
-
 .navbar-dark .navbar-nav .nav-link {
+  font-family: 'Bitter', serif;
   color: red;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: yellow;
 }

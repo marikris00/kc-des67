@@ -1,0 +1,16 @@
+
+.alert-primary {
+  color: purple;
+  background-color: plum;
+  border-color: pink;
+}
+
+.navbar-light .navbar-toggler {
+  color: purple;
+  background-color: plum;
+  border-color: pink;
+}
+
+.text-muted {
+  color: gold!important;
+}

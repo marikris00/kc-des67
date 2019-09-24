@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+img {
+  image-rendering: pixelated;
+}
+
+/*--typography---*/
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+  color: black;
+  line-height: 3rem;
+}
+
+small {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+a {
+  color:black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+/*--card---*/
+
+.card:hover {
+  background-color: aliceblue;
+  border-color: #F00439;
+}
+
+.text-dark {
+  color: black !important;
+}
+
+.text-danger {
+  color: #F00439 !important;
+}
+
+
+/*--navbar---*/
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  color: lightcyan;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: antiquewhite;
+}
+
+.navbar-light .navbar-toggler {
+  background-color: white;
+  color: #F00439;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(240, 4, 57, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

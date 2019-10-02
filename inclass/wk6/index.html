@@ -1,0 +1,93 @@
+<!--javascript is weakly typed language
+    var <- variable
+    var a(name of variable should be meaningful) = 0; <- semicolon is optional in javascript
+    var b = "0"; <- double quotes means "character aka string". it is not a number here
+    console.log(a+b); <- allows to print out javascript on web inspector
+                        result would be shown as 00 because when there is a number+string -> they both converted into string
+
+                        if var c = "1",
+                        console.log (c+a); -> 10 (not number 10 but string  1 and 0)
+
+                        console usually highlights numbers in different colors
+  -->
+
+<!-- console.log(a==b) -> true statement; 0 "0" has same value even though one is string and the other one is numbers
+      console.log(a===b) -> false statement; value are same, but they can't pass third checkpoint because one is string and the other one is $
+      console.log(a!=b)  -> false; it is opposite of the first statement "colsole.log(a==b);
+-->
+
+<!--
+function ->collection of series of actions; they can produce results (returns) into number, string, true or false, or nothing
+-->
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+
+  <title>inclass wk6</title>
+
+  <style>
+    .pink {
+      color: magenta;
+    }
+    .blue {
+      color:dodgerblue;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1 id="main_title">Hello, world!</h1>
+  <button type="button" id="colorchange">change!</button>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--
+  <script>
+    var header = document.getElementById("main_title");
+    header.style.color = "magenta";
+
+    var colorButton = document.getElementById("colorchange");
+
+    colorButton: addEventListener("click", changecolor);
+
+    function changecolor() {
+      var currentcolor = header.style.color;
+      if (currentcolor == "magenta") {
+        header.style.color = "dodgerblue";
+      } else if (currentcolor = "dodgerblue") {
+        header.style.color = "magenta";
+      }
+    }
+  </script>
+  -->
+
+  <!--
+    Before adding header:
+
+    var header= document.getElementById("main_title");
+    header.style.color = "magenta";
+
+    function changecolor(){
+      document.getElementById("main_title").style.color = "dodgerblue";
+    }
+    -->
+
+
+</body>
+
+</html>

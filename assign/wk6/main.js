@@ -13,7 +13,26 @@ $("#billingSame").change(function(){
       }
 })
 
+/*Guest Checkout*/
 
+$(function() {
+  $inp = $("#Password, #Username");
+  $cb = $("#guestCheckout");
+  $inp.prop('disabled', false);
+
+  $cb.on('change', function() {
+    if ($cb.is(':checked')) {
+      $inp.prop('disabled', true);
+    } else {
+      $inp.prop('disabled', false);
+    }
+  });
+
+});
+
+$('#BillingCity').change(function(){
+  $("#BillingState").val($(this).val());
+});
 
 
 

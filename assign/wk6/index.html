@@ -60,8 +60,8 @@
 
             <div class="col-auto mt-3">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                <label class="form-check-label" for="autoSizingCheck">
+                <input class="form-check-input" type="checkbox" id="guestCheckout">
+                <label class="form-check-label" for="guestCheckout">
                   Guest Checkout
                 </label>
               </div>
@@ -133,6 +133,17 @@
 
             <div class="row">
 
+              <div class="col-md-5 mb-3">
+                <label for="zip">City</label>
+                <input type="text" name="bcity" class="form-control" id="BillingCity" placeholder="" required>
+                <div class="invalid-feedback">
+                  City name required.
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+
               <div class="col-md-4 mb-3">
                 <label for="state">State</label>
                 <select name="bstate" class="custom-select d-block w-100" id="BillingState" required>
@@ -192,17 +203,6 @@
                 </select>
                 <div class="invalid-feedback">
                   Please provide a valid state.
-                </div>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-
-              <div class="col-md-5 mb-3">
-                <label for="zip">City</label>
-                <input type="text" name="bcity" class="form-control" id="BillingCity" placeholder="" required>
-                <div class="invalid-feedback">
-                  City name required.
                 </div>
                 <div class="valid-feedback">
                   Looks good!
@@ -284,6 +284,17 @@
 
                 <div class="row">
 
+                  <div class="col-md-5 mb-3">
+                    <label for="zip">City</label>
+                    <input type="text" name="scity" class="form-control" id="ShippingCity" placeholder="" required>
+                    <div class="invalid-feedback">
+                      City name required.
+                    </div>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+
                   <div class="col-md-4 mb-3">
                     <label for="state">State</label>
                     <select name="sstate" class="custom-select d-block w-100" id="ShippingState" required>
@@ -349,16 +360,6 @@
                     </div>
                   </div>
 
-                  <div class="col-md-5 mb-3">
-                    <label for="zip">City</label>
-                    <input type="text" name="scity" class="form-control" id="ShippingCity" placeholder="" required>
-                    <div class="invalid-feedback">
-                      City name required.
-                    </div>
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
-                  </div>
 
                   <div class="col-md-3">
                     <label for="zip">Zip</label>
@@ -482,21 +483,11 @@
 
       <script>
 
-      var hasError = function (field) {
+      document.getElementById("BillingState").addEventListener("input", selectState);
 
-          // Don't validate submits, buttons, file and reset inputs, and disabled fields
-          if (field.disabled || field.type === 'file' || field.type === 'reset' || field.type === 'submit' || field.type === 'button') return;
-
-          // Get validity
-          var validity = field.validity;
-
-          // If valid, return null
-          if (validity.valid) return;
-
-          // If field is required and empty
-          if (validity.valueMissing) return 'Please fill out this field.';
-
-      };
+  function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+  }
 
       </script>
 

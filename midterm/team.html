@@ -199,7 +199,7 @@
 
                       <div class="mb-3">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com" value="" required>
+                        <input type="email" class="form-control" id="email" placeholder="" value="" required>
                         <div class="invalid-feedback">
                           Please enter a valid email address.
                         </div>
@@ -207,7 +207,7 @@
 
                       <div class="mb-3">
                         <label for="formcontrol">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" value="" required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7" value="" required></textarea>
                         <div class="invalid-feedback">
                           Please enter your inquries.
                         </div>
@@ -249,9 +249,9 @@
 
   <footer class="footer mt-auto py-5">
     <img src="img/wave.svg" alt="wave_footer_divider" height="auto;">
-    <div class="container my-5">
+    <div class="container mt-5">
       <div class="row">
-        <div class="col-12 text-left pt-3">
+        <div class="col-12 col-md-6 pt-3">
           <p>
             Tidal Wave</p>
 
@@ -265,9 +265,16 @@
 
             info@tidalwave.com</p>
 
-          <div class="col-12 text-right pt-3">
+          </div>
+
+          <div class="col-12 col-md-6 text-right float-lg-right">
+            <label for="email">Subscribe to our newsletter</label>
+            <input type="email" class="form-control" id="email" placeholder="" value="example@email.com" required>
+            <button class="btn btn-primary btn-sm btn-block my-3" type="submit">Subscribe</button>
+
             <span class="text-muted"><small>© 2019 Tidal Wave. All Rights Reserved</small></span>
           </div>
+
         </div>
       </div>
   </footer>

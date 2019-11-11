@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>wk11 assign</title>
+</head>
+
+<body>
+
+  <div class="d-flex justify-content-center pt-5">
+
+    <canvas id="myCanvas" width="600" height="600">
+      html canvas. newer browser needed.
+    </canvas>
+
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext('2d');
+
+      var lingrad = ctx.createLinearGradient(0, 0, 200, 700);
+      lingrad.addColorStop(0, '#070a3d');
+      lingrad.addColorStop(0.45, '#070a3d');
+      lingrad.addColorStop(1, '#feffeb');
+
+      ctx.fillStyle = lingrad;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      //background snow
+
+      ctx.beginPath();
+      ctx.fillStyle = 'white';
+      ctx.fillRect(50, 50, 2, 2);
+      ctx.fillRect(150, 50, 2, 2);
+      ctx.fillRect(250, 50, 2, 2);
+      ctx.fillRect(350, 50, 2, 2);
+      ctx.fillRect(450, 50, 2, 2);
+      ctx.fillRect(550, 50, 2, 2);
+
+      ctx.fillRect(100, 100, 2, 2);
+      ctx.fillRect(200, 100, 2, 2);
+      ctx.fillRect(300, 100, 2, 2);
+      ctx.fillRect(400, 100, 2, 2);
+      ctx.fillRect(500, 100, 2, 2);
+
+      ctx.fillRect(50, 150, 2, 2);
+      ctx.fillRect(150, 150, 2, 2);
+      ctx.fillRect(250, 150, 2, 2);
+      ctx.fillRect(350, 150, 2, 2);
+      ctx.fillRect(450, 150, 2, 2);
+      ctx.fillRect(550, 150, 2, 2);
+
+      ctx.fillRect(100, 200, 2, 2);
+      ctx.fillRect(200, 200, 2, 2);
+      ctx.fillRect(300, 200, 2, 2);
+      ctx.fillRect(400, 200, 2, 2);
+      ctx.fillRect(500, 200, 2, 2);
+
+      ctx.fillRect(50, 250, 2, 2);
+      ctx.fillRect(150, 250, 2, 2);
+      ctx.fillRect(250, 250, 2, 2);
+      ctx.fillRect(350, 250, 2, 2);
+      ctx.fillRect(450, 250, 2, 2);
+      ctx.fillRect(550, 250, 2, 2);
+
+      ctx.fillRect(100, 300, 2, 2);
+      ctx.fillRect(200, 300, 2, 2);
+      ctx.fillRect(300, 300, 2, 2);
+      ctx.fillRect(400, 300, 2, 2);
+      ctx.fillRect(500, 300, 2, 2);
+
+      ctx.fillRect(50, 350, 2, 2);
+      ctx.fillRect(150, 350, 2, 2);
+      ctx.fillRect(250, 350, 2, 2);
+      ctx.fillRect(350, 350, 2, 2);
+      ctx.fillRect(450, 350, 2, 2);
+      ctx.fillRect(550, 350, 2, 2);
+
+      ctx.fillRect(100, 400, 2, 2);
+      ctx.fillRect(200, 400, 2, 2);
+      ctx.fillRect(300, 400, 2, 2);
+      ctx.fillRect(400, 400, 2, 2);
+      ctx.fillRect(500, 400, 2, 2);
+      ctx.fill();
+
+      //snowman
+
+      ctx.beginPath();
+      ctx.fillStyle = 'white';
+      ctx.arc(300, 200, 85, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.fillStyle = 'white';
+      ctx.arc(300, 360, 105, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.fillStyle = 'white';
+      ctx.arc(300, 520, 140, 0, Math.PI * 2);
+      ctx.fill();
+
+      //scarf
+
+      ctx.beginPath();
+      ctx.fillStyle = '#910a0a';
+      ctx.moveTo(377,235);
+      ctx.quadraticCurveTo(390, 270, 380, 300);
+      ctx.quadraticCurveTo(300, 350, 220, 300);
+      ctx.quadraticCurveTo(215, 270, 225, 240);
+      ctx.quadraticCurveTo(300, 280, 378, 236);
+
+      ctx.moveTo(330,321);
+      ctx.quadraticCurveTo(330, 330, 330, 420);
+      ctx.quadraticCurveTo(350, 430, 380, 420);
+      ctx.quadraticCurveTo(400, 410, 380, 298);
+      ctx.quadraticCurveTo(360, 316, 329, 321);
+      ctx.fill();
+
+      //eyes
+
+      ctx.beginPath();
+      ctx.fillStyle = 'black';
+      ctx.fillRect(235, 193, 30, 5);
+      ctx.arc(250, 200, 5, 0, Math.PI * 2);
+      ctx.fillRect(305, 193, 30, 5);
+      ctx.arc(320, 200, 5, 0, Math.PI * 2);
+      ctx.fill();
+
+      //nose
+
+      ctx.beginPath();
+      ctx.moveTo(280, 210);
+      ctx.fillStyle = '#a85f1e';
+      ctx.quadraticCurveTo(210, 240, 200, 240);
+      ctx.quadraticCurveTo(275, 235, 285, 235);
+      ctx.quadraticCurveTo(290, 220, 280, 210);
+      ctx.fill();
+
+      //hat
+
+      ctx.beginPath();
+      ctx.moveTo(384, 180);
+      ctx.fillStyle = '#910a0a';
+      ctx.quadraticCurveTo(395, 160, 390, 130);
+      ctx.quadraticCurveTo(355, 100, 310, 116);
+      ctx.quadraticCurveTo(340, 185, 384, 180);
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.fillStyle = 'white';
+      ctx.arc(390, 130, 10, 0, Math.PI * 2);
+      ctx.fill();
+
+
+
+
+
+
+
+    </script>
+
+  </div>
+
+
+
+
+</body>
+
+</html>

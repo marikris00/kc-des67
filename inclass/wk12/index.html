@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>wk12 inclass</title>
+  </head>
+  <body>
+
+    <canvas id="Game" width="800" height="600">
+      html canvas. newer browser needed.
+    </canvas>
+
+    <script src="canvas.js">
+      var canvas = document.getElementById("Game");
+      var ctx = canvas.getContext('2d');
+
+      //ball center
+
+      var ballX = canvas.width/2;
+      var ballY = canvas.height/2;
+
+      var ballColor = 'red';
+      var ballRadius = 50;
+
+      //ball velocity
+
+      var speedX = 5;
+      var speedY = 3;
+
+      var directionDown; = true;
+      var directionRight; =
+
+      function animate(){
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.beginPath();
+        ctx.fillStyle = ballColor;
+        ctx.strokeStyle = 'black';
+        ctx.arc(ballX, ballY, ballRadius, 0, 2*Math.PI);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closepath();
+
+        if(ballX >= canvas.width) {
+            directionRight = false;
+          }
+
+        if(ballX <= 0){
+          directionRight = true;
+        }
+
+        if(directionRight){
+          ballX = ballX + speedX;
+        }
+
+        else {
+          ballX = ballX - speedX;
+        }
+
+        if(ballY >= canvas.height){
+          directionDown = false;
+        }
+
+        if(ballY = ballRadius <=0){
+          directionDown = true;
+        }
+        
+        if(ballY<=0){
+          directionDown=true;
+        }
+
+        if(directionDown){
+          ballY = ballY + speedY;
+        }
+
+        window.requestAnimationFrame(animate);
+      }
+
+      animate();
+
+    </script>
+
+  </body>
+</html>

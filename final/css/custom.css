@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+img {
+  image-rendering: pixelated;
+}
+
+/*--typography---*/
+
+h1{
+  font-family: 'EB Garamond', serif;
+  color: #011627
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'EB Garamond', serif;
+  color: #090C9B;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'EB Garamond', serif;
+  color: #5C9EAD;
+  font-weight: 500;
+}
+
+h6 {
+  font-family: 'EB Garamond', serif;
+  color: #011627;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+  color: #011627;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+a {
+  font-family: 'EB Garamond', serif;
+  color:#3B50D6;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #5C9EAD;
+  text-decoration: none;
+}
+
+
+/*--card---*/
+
+.card:hover {
+  background-color: rgba(92, 158, 173, 0.15);
+}
+
+.text-dark {
+  color: #011627 !important;
+}
+
+/*--button---*/
+
+.btn-primary {
+  background-color: #011627 !important;
+  border-color: transparent !important;
+}
+
+.btn-primary:hover {
+  background-color: #5C9EAD !important;
+  border-color: transparent !important;
+}
+
+
+/*--carousel indicators---*/
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+
+/*--table---*/
+
+.bg-info {
+  background-color: rgba(92, 158, 173, 0.15) !important;
+}
+
+/*--navbar---*/
+
+.img_logo {
+  width: 100px;
+  height: auto;
+}
+
+.full_logo {
+  width: 100px;
+  height: auto;
+}
+
+.nav_a {
+  font-family: 'Muli', sans-serif;
+}
+
+.nav_a:hover {
+  border-bottom: 2px solid #011627;
+}
+
+.nav_a:active {
+  text-decoration: underline;
+}
+
+.navbar-light .navbar-toggler {
+  background-color: transparent;
+  color: #011627;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #011627;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1, 22, 39, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-up {
+    top: -40px;
+}
+
+/*--font size---*/
+
+html { font-size: 0.75rem;}
+
+@media (min-width: 576px) {
+    html { font-size: 0.8rem; }
+}
+@media (min-width: 768px) {
+    html { font-size: 1rem; }
+}
+@media (min-width: 992px) {
+    html { font-size: 1rem; }
+}
+@media (min-width: 1200px) {
+    html { font-size: 1.1rem; }
+}

@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-body {
-  font-family: 'Solway', serif;
-  font-weight: 300;
-}
 
 img {
   image-rendering: pixelated;
@@ -13,51 +9,46 @@ img {
 
 h1{
   font-family: 'Nixie One', serif;
-  color: #593C8F;
+  color: #011627;
   font-weight: 700;
 }
 
 h2 {
   font-family: 'Solway', serif;
-  color: #593C8F;
+  color: #DB5461;
   font-weight: 400;
 }
 
 h3 {
   font-family: 'Solway', serif;
-  color: #DB5461;
+  color: #5C9EAD;
   font-weight: 400;
-}
-
-h4 {
-  font-family: 'Solway', serif;
-  color: #593C8F;
-  font-weight: 300;
 }
 
 h6 {
   font-family: 'Solway', serif;
-  color: #171738;
+  color: #011627;
   font-weight: 300;
 }
 
 p {
   font-family: 'Solway', serif;
-  color: #171738;
+  color: #011627;
   font-weight: 300;
   line-height: 2rem;
 }
 
 a {
   font-family: 'Solway', serif;;
-  color:#593C8F;
+  color:#171738;
   font-weight: 300;
 }
 
 a:hover {
-  color: #171738;
+  color: #593C8F;
   text-decoration: none;
 }
+
 
 /*--card---*/
 
@@ -75,36 +66,7 @@ a:hover {
   color: #593C8F;
 }
 
-.btn-warning {
-  background-color: rgba(255, 255, 255, 0.5) !important;
-  border-color: #593C8F !important;
-  font-family: 'Solway', serif;
-  font-weight: 300;
-  color: #593C8F;
-}
-
-.btn-warning:hover {
-  background-color: rgba(89, 60, 143, 0.5) !important;
-  border-color: #8EF9F3 !important;
-  color: #8EF9F3;
-}
-
-
 .btn-primary:hover {
-  background-color: rgba(89, 60, 143, 0.5) !important;
-  border-color: #8EF9F3 !important;
-  color: #8EF9F3;
-}
-
-.btn-secondary {
-  background-color: transparent !important;
-  border-color: #8EF9F3 !important;
-  font-family: 'Solway', serif;
-  font-weight: 300;
-  color: #8EF9F3;
-}
-
-.btn-secondary:hover {
   background-color: rgba(89, 60, 143, 0.5) !important;
   border-color: #8EF9F3 !important;
   color: #8EF9F3;
@@ -113,13 +75,13 @@ a:hover {
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 300px; /* Place the button at the bottom of the page */
-  right: 50px; /* Place the button 30px from the right */
+  bottom: 180px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #FFD9CE; /* Set a background color */
-  color: #171738; /* Text color */
+  background-color: #593C8F; /* Set a background color */
+  color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -130,7 +92,6 @@ a:hover {
 
 #myBtn:hover {
   background-color: #171738; /* Add a dark-grey background on hover */
-  color: #FFD9CE;
 }
 
 /*--carousel indicators---*/

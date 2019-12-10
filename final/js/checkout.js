@@ -30,9 +30,21 @@ $(function() {
 
 });
 
-$('#BillingCity').change(function(){
-  $("#BillingState").val($(this).val());
+$(document).ready(function (){
+    validate();
+    $('#cc-name, #cc-number, #cc-expiration').change(validate);
 });
+
+function validate(){
+    if ($('#cc-name').val().length   >   0   &&
+        $('#cc-number').val().length  >   0   &&
+        $('#cc-expiration').val().length    >   0) {
+        $("#submitButton").prop("disabled", false);
+    }
+    else {
+        $("#submitButton").prop("disabled", true);
+    }
+}
 
 
 //Get the button:

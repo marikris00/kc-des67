@@ -76,7 +76,7 @@ a:hover {
 }
 
 .btn-warning {
-  background-color: rgba(255, 255, 255, 0.5) !important;
+  background-color: rgba(255, 255, 255, 0.75) !important;
   border-color: #593C8F !important;
   font-family: 'Solway', serif;
   font-weight: 300;
@@ -113,8 +113,8 @@ a:hover {
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 300px; /* Place the button at the bottom of the page */
-  right: 50px; /* Place the button 30px from the right */
+  bottom: 263px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */

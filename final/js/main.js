@@ -1,17 +1,19 @@
-$(document).ready(function() {
+$(document).ready(function(){
 
 
-  $('#myCarousel').on('slide.bs.carousel', function(e) {
-    console.log(e);
-  })
-
-$(window).on('load', function() {
-  $('#myCarousel').carousel({
-    interval: 5000
-  });
-})
+    $('#myCarousel').on('slide.bs.carousel', function (e) {
+        console.log(e);
+    })
 
 })
+
+$(window).on('load', function(){
+    $('#myCarousel').carousel({
+        interval: 2000
+    });
+
+})
+
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
@@ -20,7 +22,7 @@ mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";

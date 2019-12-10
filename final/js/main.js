@@ -57,7 +57,7 @@ function topFunction() {
 var currentItems = 0;
 $(document).ready(function(){
 
-       $("#buyThis").click(function(){
+       $("#buyThis, #buyThis2").click(function(){
            currentItems++;
            $(".cart-badge").text(currentItems);
        });
